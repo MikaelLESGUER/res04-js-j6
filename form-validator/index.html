@@ -12,6 +12,41 @@
     <h1 class="sr-only">form-validator</h1>
 </header>
 <main>
+    <h2>Création d'un nouvel utilisateur</h2>
+
+  <form id="userForm" action="#" method="GET">
+    <div>
+      <label for="lastName">Nom:</label>
+      <input type="text" id="lastName" name="lastName" required>
+    </div>
+    <div>
+      <label for="firstName">Prénom:</label>
+      <input type="text" id="firstName" name="firstName" required>
+      <span id="error-first" class="error-message">Le nom doit contenir des lettres uniquement.</span>
+    </div>
+    <div>
+      <label for="nickName">Pseudo:</label>
+      <input type="text" id="nickName" name="nickName" required>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="password">Mot de passe:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div>
+      <label for="confirmPassword">Confirmation de mot de passe:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+    </div>
+    <div>
+      <label for="biography">Biographie:</label>
+      <textarea id="biography" name="biography"></textarea>
+    </div>
+
+    <button type="submit">Créer utilisateur</button>
+  </form>
 </main>
 <script type="module" src="./index.js"></script>
 
